@@ -742,37 +742,126 @@ nav .navigation li a:hover {
   color: #333;
 }
 
-.site-footer {
-  background: #33001a;
-  color: white;
-  padding: 60px 20px;
-  text-align: center;
+.footer {
+  background: #fff;
+  color: #060606;
+  padding: 60px 0 0 0;
+  font-size: 1rem;
+  border-top: 1px solid #e5e5e5;
+  margin-top: 40px;
 }
 
-.site-footer .cta h2 {
-  font-size: 1.8rem;
-  margin-bottom: 20px;
-}
-
-.cta-buttons {
+.footer-container {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  gap: 15px;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px 20px 20px;
+  gap: 40px;
+}
+
+.footer-col {
+  flex: 1 1 220px;
+  min-width: 200px;
   margin-bottom: 30px;
 }
 
-.cta-buttons button {
-  padding: 14px 28px;
-  font-size: 1rem;
-  background: #ff2f7a;
-  border: none;
-  border-radius: 8px;
-  color: white;
-  cursor: pointer;
+.logo-col {
+  max-width: 320px;
 }
 
-.site-footer p {
-  font-size: 0.9rem;
-  color: #ccc;
+.footer-logo {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.footer-desc {
+  font-size: 1.08rem;
+  color: #222;
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 18px;
+  margin-top: 10px;
+}
+
+.footer-socials a {
+  color: #060606;
+  font-size: 2rem;
+  transition: color 0.2s;
+}
+
+.footer-socials a:hover {
+  color: #ff52a2;
+}
+
+.footer-col h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+  color: #060606;
+}
+
+.footer-col ul {
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 14px;
+  color: #222;
+  font-size: 1.05rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-col ul li a:hover {
+  color: #ff52a2;
+}
+
+.footer-col ul li a {
+  color: #060606;
+  transition: color 0.2s;
+  font-weight: 500;
+}
+
+.footer-col ul li a:hover {
+  color: #ff52a2;
+}
+
+.footer-col ul li i {
+  font-size: 1rem;
+  margin-right: 7px;
+  font-weight: 500;
+}
+
+.footer-separator {
+  border: none;
+  border-top: 1px solid black;
+  margin: 0 20px 0 20px;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 30px 0 30px 0;
+  color: #222;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+@media (max-width: 900px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 0;
+    padding: 0 20px 30px 20px;
+  }
+
+  .footer-col {
+    margin-bottom: 25px;
+  }
 }
