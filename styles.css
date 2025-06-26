@@ -699,55 +699,444 @@ nav .navigation li a:hover {
   border-radius: 10px;
 }
 
-.stands {
-  background: #fff0f6;
-  padding: 80px 40px;
+/* --- Section CTA (appel à l'action) --- */
+.cta-section {
+  background: linear-gradient(180deg, #ff6fb7 0%, #ff52a2 100%);
+  padding: 70px 0 40px 0;
+  text-align: center;
+  color: #fff;
+}
+
+.cta-section h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 25px;
+}
+
+.cta-section .cta-subtitle {
+  font-size: 1.18rem;
+  max-width: 700px;
+  margin: 0 auto 35px auto;
+  font-weight: 500;
+  opacity: 0.95;
+}
+
+.cta-section .cta-btns {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.cta-section .cta-btn {
+  background: #fff;
+  color: #b10054;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 32px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.cta-section .cta-btn.cta-rancard {
+  background: #33001a;
+  color: #fff;
+}
+
+.cta-section .cta-btn:hover {
+  background: #ffb3d6;
+  color: #b10054;
+}
+
+.cta-section .cta-btn.cta-rancard:hover {
+  background: #b10054;
+  color: #fff;
+}
+
+.cta-section .cta-infos {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.cta-section .cta-info-box {
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 16px;
+  padding: 32px 38px;
+  min-width: 260px;
+  max-width: 320px;
+  text-align: center;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  margin-bottom: 15px;
+}
+
+.cta-section .cta-info-box i {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.cta-section .cta-info-box h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+
+.cta-section .cta-info-box p {
+  font-size: 1rem;
+  opacity: 0.93;
+  margin-bottom: 0;
+}
+
+.three-minutes-section {
+  padding: 60px 0 40px 0;
+  background: #fff;
   text-align: center;
 }
 
-.stands h2 {
+.three-minutes-title {
   font-size: 2rem;
   color: #b10054;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.three-minutes-subtitle {
+  color: #444;
+  font-size: 1.08rem;
   margin-bottom: 40px;
+  font-weight: 500;
+}
+
+.three-minutes-cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.three-minutes-card {
+  background-size: cover;
+  background-position: center;
+  border-radius: 18px;
+  width: 600px;
+  min-height: 460px;
+  box-shadow: 0 8px 32px rgba(139, 0, 51, 0.08);
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.three-minutes-card-content {
+  background: rgba(255, 255, 255, 0.93);
+  border-radius: 16px;
+  padding: 28px 24px 20px 24px;
+  margin: 0 25px 25px 25px;
+  width: 100%;
+  text-align: left;
+  position: relative;
+  z-index: 2;
+}
+
+.three-minutes-card-content h3 {
+  font-size: 1.15rem;
+  color: #b10054;
+  font-weight: 700;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.three-minutes-card-content p {
+  color: #444;
+  font-size: 1rem;
+  margin-bottom: 18px;
+  font-weight: 500;
+}
+
+.three-minutes-btn {
+  background: #ff52a2;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  padding: 12px 0;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.three-minutes-btn:hover {
+  background: #b10054;
+}
+
+.arrow {
+  font-size: 1.1em;
+  margin-left: 5px;
+}
+
+/* --- Section 3 Minutes Pour Prouver (custom) --- */
+.three-minutes-section-custom {
+  width: 100%;
+  padding: 60px 0 40px 0;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.three-minutes-title-custom {
+  color: #b10054;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.three-minutes-subtitle-custom {
+  color: #333;
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 35px;
+  max-width: 600px;
+}
+
+.three-minutes-cards-custom {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.three-minutes-card-custom {
+  width: 370px;
+  height: 260px;
+  border-radius: 18px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.three-minutes-card-custom:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 12px 32px 0 rgba(31, 38, 135, 0.18);
+}
+
+.three-minutes-card-content-custom {
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 12px;
+  margin: 20px;
+  padding: 18px 20px 16px 20px;
+  box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.07);
+  width: calc(100% - 40px);
+}
+
+.three-minutes-card-content-custom h3 {
+  color: #b10054;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.three-minutes-card-content-custom p {
+  color: #333;
+  font-size: 0.98rem;
+  margin-bottom: 18px;
+  font-weight: 500;
+}
+
+.three-minutes-btn-custom {
+  background: linear-gradient(90deg, #ff52a2 0%, #ff719a 100%);
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 28px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.07);
+}
+
+.three-minutes-btn-custom:hover {
+  background: linear-gradient(90deg, #ff719a 0%, #ff52a2 100%);
+  box-shadow: 0 4px 16px 0 rgba(31, 38, 135, 0.13);
+}
+
+.arrow-custom {
+  font-size: 1.2em;
+  margin-left: 6px;
+}
+
+.stands {
+  background: #fff6f9;
+  padding: 60px 0 40px 0;
+  text-align: center;
+}
+
+.stands-title {
+  color: #8b0033;
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.stands-subtitle {
+  color: #222;
+  opacity: 0.7;
+  font-size: 1rem;
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.stands-filters {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+
+.stand-filter {
+  background: #fff;
+  border: 1px solid #ff52a2;
+  color: #ff52a2;
+  font-weight: 600;
+  border-radius: 5px;
+  padding: 6px 18px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  font-size: 0.95rem;
+}
+
+.stand-filter.active,
+.stand-filter:hover {
+  background: #ff52a2;
+  color: #fff;
 }
 
 .stand-grid {
   display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+  padding-left: 20px;
+  margin-bottom: 50px;
   flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
 }
 
 .stand-card {
-  background: white;
+  background: #fff;
   border-radius: 12px;
-  padding: 20px;
-  width: 200px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  transition: transform 0.2s;
-}
-
-.stand-card:hover {
-  transform: translateY(-5px);
+  box-shadow: 0 2px 16px rgba(255, 82, 162, 0.08);
+  overflow: hidden;
+  width: 310px;
+  text-align: left;
+  transition: box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
 }
 
 .stand-card img {
   width: 100%;
-  border-radius: 8px;
-  margin-bottom: 10px;
+  height: 220px;
+  object-fit: cover;
+  background: #eee;
 }
 
-.stand-card p {
-  font-size: 1rem;
-  color: #333;
+.stand-card-content {
+  padding: 18px 16px 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.stand-badge {
+  display: inline-block;
+  background: #8b00331a;
+  color: #8b0033;
+  font-size: 0.75rem;
+  width: max-content;
+  font-weight: 600;
+  border-radius: 4px;
+  padding: 2px 10px;
+  margin-bottom: 5px;
+}
+
+.stand-name {
+  font-size: 1.1rem;
+  color: #8b0033;
+  font-weight: 700;
+  margin: 0;
+}
+
+.stand-desc {
+  font-size: 0.95rem;
+  color: #444;
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+
+.stand-link {
+  color: #ff52a2;
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.stand-link:hover {
+  color: #8b0033;
+}
+
+.stands-bottom {
+  margin-top: 125px;
+}
+
+.stands-all-btn {
+  background: #8b0033;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 28px;
+  font-size: 0.98rem;
+  cursor: pointer;
+  margin-bottom: 60px;
+  transition: background 0.2s;
+}
+
+.stands-all-btn:hover {
+  background: #ff52a2;
+}
+
+.stands .arrow {
+  font-weight: bold;
+  margin-left: 4px;
 }
 
 .footer {
   background: #fff;
   color: #060606;
-  padding: 60px 0 0 0;
-  font-size: 1rem;
-  border-top: 1px solid #e5e5e5;
+  padding: 30px 0 0 0;
   margin-top: 40px;
 }
 
@@ -863,5 +1252,54 @@ nav .navigation li a:hover {
 
   .footer-col {
     margin-bottom: 25px;
+  }
+
+  .cta-section .cta-infos {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .cta-section .cta-info-box {
+    min-width: 180px;
+    max-width: 100%;
+    margin: 0 auto 18px auto;
+  }
+
+  .three-minutes-cards-custom {
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+  }
+
+  .three-minutes-card-custom {
+    width: 95vw;
+    max-width: 400px;
+    height: 220px;
+  }
+
+  .stands {
+    padding: 40px 0 30px 0;
+  }
+
+  .stand-grid {
+    gap: 18px;
+  }
+
+  .stand-card {
+    width: 95vw;
+    max-width: 340px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .three-minutes-cards {
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+  }
+
+  .three-minutes-card {
+    width: 95vw;
+    max-width: 420px;
   }
 }
