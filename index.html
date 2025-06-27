@@ -21,6 +21,17 @@
         <li><a href="#partenaires">Partenaires</a></li>
         <li><a href="#3min_pour_prouver">3min pour prouver</a></li>
       </ul>
+      <div class="language-selector">
+        <button class="lang-btn">
+          <i class='bx bx-globe'></i>
+          <span class="lang-label">FR</span>
+          <i class="bx bx-chevron-down"></i>
+        </button>
+        <ul class="lang-dropdown">
+          <li data-lang="fr">Français</li>
+          <li data-lang="en">English</li>
+        </ul>
+      </div>
       <div class="btn0"><a href="inscription">Mon Compte</a></div>
       <div class="bx bx-menu" id="rancard-menu"></div>
     </nav>
@@ -184,62 +195,63 @@
       </div>
     </div>
   </section>
-  <section class="tickets-section">
-    <div class="container">
-      <h2>Nos tickets</h2>
-      <p class="tickets-subtitle">
-        Choisissez le ticket qui correspond à vos besoins et préparez-vous à
-        vivre une expérience inoubliable à La Cité du Rancard.
-      </p>
-
-      <div class="ticket-grid">
-        <!-- Ticket 1 -->
-        <div class="ticket-card">
-          <i class="bx bxs-check-square"></i>
-          <h3>Solo</h3>
-          <p class="price">2000 FCFA</p>
-          <ul>
-            <li>1 Date garantie</li>
-            <li>Accès à l’événement</li>
-            <li>Accès aux stands</li>
-          </ul>
-          <button class="ticket-btn">Obtenir ce ticket</button>
-        </div>
-
-        <!-- Ticket 2 (mis en avant) -->
-        <div class="ticket-card featured">
-          <div class="badge">Le plus populaire</div>
-          <i class="bx bx-star"></i>
-          <h3>Solo avec Conso</h3>
-          <p class="price">3000 FCFA</p>
-          <ul>
-            <li>Tous les avantages du Solo</li>
-            <li>+ 1 conso offerte</li>
-            <li>Accès au matchmaking</li>
-          </ul>
-          <button class="ticket-btn dark">Obtenir ce ticket</button>
-        </div>
-
-        <!-- Ticket 3 -->
-        <div class="ticket-card">
-          <i class="bx bx-award"></i>
-          <h3>VIP</h3>
-          <p class="price">10 000 FCFA</p>
-          <ul>
-            <li>Accès zone VIP</li>
-            <li>2 Dates garanties</li>
-            <li>1 conso + surprises</li>
-          </ul>
-          <button class="ticket-btn">Obtenir ce ticket</button>
-        </div>
+  <!-- Section Nos tickets (nouvelle version) -->
+  <section class="tickets-section-new">
+    <h2 class="tickets-title">Nos tickets</h2>
+    <p class="tickets-subtitle">
+      Choisissez le ticket qui correspond à vos attentes et préparez-vous à vivre une expérience inoubliable à La Cité
+      du Rancard.
+    </p>
+    <div class="tickets-grid">
+      <!-- Ticket Solo -->
+      <div class="ticket-card-new">
+        <div class="ticket-icon ticket-icon-solo"><i class='bx bx-check'></i></div>
+        <h3>Solo</h3>
+        <p class="ticket-price">2000 FCFA</p>
+        <ul>
+          <li>Accès à l'évènement</li>
+          <li>Participation au système de Date</li>
+          <li>Numéro unique d'appariement</li>
+          <li>Accès aux stands partenaires</li>
+        </ul>
+        <button class="ticket-btn-new">Obtenir ce ticket</button>
+      </div>
+      <!-- Ticket Solo avec Conso -->
+      <div class="ticket-card-new ticket-featured">
+        <div class="ticket-badge">Le plus populaire</div>
+        <div class="ticket-icon ticket-icon-conso"><i class='bx bx-star'></i></div>
+        <h3>Solo avec Conso</h3>
+        <p class="ticket-price">3000 FCFA</p>
+        <ul>
+          <li>Tout ce qui est inclus dans Solo</li>
+          <li>Une boisson conso d'entrée</li>
+          <li>Accès prioritaire aux stands</li>
+          <li>Possibilité de rencontrer les artistes</li>
+        </ul>
+        <button class="ticket-btn-new ticket-btn-featured">Obtenir ce ticket</button>
+      </div>
+      <!-- Ticket VIP -->
+      <div class="ticket-card-new">
+        <div class="ticket-icon ticket-icon-vip"><i class='bx bx-award'></i></div>
+        <h3>VIP</h3>
+        <p class="ticket-price">10000 FCFA</p>
+        <ul>
+          <li>Tout ce qui est inclus dans Solo avec Conso</li>
+          <li>Accès à la zone VIP</li>
+          <li>Consommations illimitées</li>
+          <li>Cadeau exclusif La Cité du Rancard</li>
+        </ul>
+        <button class="ticket-btn-new">Obtenir ce ticket</button>
       </div>
     </div>
   </section>
+  <!-- Fin Section Nos tickets -->
   <!-- Section Stands & Partenaires -->
   <section class="stands">
     <h2 class="stands-title">Stands & Partenaires</h2>
     <p class="stands-subtitle">
-      Découvrez nos stands et partenaires qui rendront cette édition de La Cité du Rancard encore plus exceptionnelle. Une sélection de qualité pour enrichir votre expérience.
+      Découvrez nos stands et partenaires qui rendront cette édition de La Cité du Rancard encore plus exceptionnelle.
+      Une sélection de qualité pour enrichir votre expérience.
     </p>
     <div class="stands-filters">
       <button class="stand-filter active" data-filter="all">Tous</button>
@@ -329,9 +341,9 @@
           rencontres amicales et professionnelles.
         </p>
         <div class="footer-socials">
-          <a href="#" aria-label="Facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="#" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
-          <a href="#" aria-label="Twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="#"><i class="bx bxl-facebook"></i></a>
+          <a href="#"><i class="bx bxl-instagram"></i></a>
+          <a href="#"><i class="bx bxl-twitter"></i></a>
         </div>
       </div>
       <div class="footer-col links-col">
