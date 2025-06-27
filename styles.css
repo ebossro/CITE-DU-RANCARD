@@ -590,7 +590,6 @@ nav .navigation li a:hover {
   font-weight: 600;
 }
 
-/* --- Section CTA (appel à l'action) --- */
 .cta-section {
   background: linear-gradient(180deg, #ff6fb7 0%, #ff52a2 100%);
   padding: 70px 0 40px 0;
@@ -774,7 +773,6 @@ nav .navigation li a:hover {
   margin-left: 5px;
 }
 
-/* --- Section 3 Minutes Pour Prouver (custom) --- */
 .three-minutes-section-custom {
   width: 100%;
   padding: 60px 0 40px 0;
