@@ -177,17 +177,27 @@ nav .navigation li a:hover {
 }
 
 .connexion{
+  border-radius: 10px;
   margin-top: 2rem;
   margin-left: 10px;
   padding: 20px;
   background-color: rgba(235, 232, 101, 0.671);
   border: 1px solid rgb(255, 230, 0);
 }
-.connexion-p{
-  margin-top: 10px;
+
+.connexion-title{
+  padding-bottom: 10px;
 }
+
+
+.connexion-title span {
+  padding-left: 10px;
+}
+
 .connexion-items a{
-  margin-top: 70px;
+  padding-left: 20px;
+  display: inline-block;
+  padding-top: 10px;
   color: #ff719a;
 }
 
