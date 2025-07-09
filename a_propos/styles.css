@@ -1384,3 +1384,215 @@ nav .navigation li a:hover {
     gap: 10px;
   }
 }
+
+
+/* Section À propos */
+.about-section {
+  max-width: 700px;
+  margin: 10rem auto 0 auto;
+  padding: 0 16px;
+}
+
+.about-title {
+  text-align: center;
+  color: var(--accent);
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.about-subtitle {
+  text-align: center;
+  color: #666;
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+
+.about-img-container {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+}
+
+.about-img {
+  width: 100%;
+  display: block;
+  max-height: 320px;
+  object-fit: cover;
+}
+
+.about-content-box {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  padding: 32px 28px 24px 28px;
+  margin-bottom: 30px;
+}
+
+.about-content-box h2 {
+  color: var(--accent);
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.about-content-box p {
+  margin-bottom: 18px;
+  color: #222;
+  font-size: 1.08rem;
+}
+
+.about-content-box h2:last-of-type + p {
+  margin-bottom: 0;
+}
+
+.about-cards {
+  display: flex;
+  gap: 18px;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.about-card {
+  flex: 1 1 180px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  padding: 22px 18px;
+  min-width: 180px;
+  max-width: 220px;
+  text-align: center;
+}
+
+.about-card h3 {
+  color: var(--accent);
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.about-card p {
+  color: #222;
+  font-size: 0.98rem;
+  margin-bottom: 0;
+}
+
+.about-btn-container {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.about-contact-box {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  padding: 22px 18px;
+  text-align: center;
+}
+
+.about-contact-box h2 {
+  color: var(--accent);
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.about-contact-box p {
+  color: #222;
+  font-size: 1.02rem;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 800px) {
+  .about-section {
+    max-width: 98vw;
+    padding: 0 4vw;
+  }
+
+  .about-cards {
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+  }
+
+  .about-card {
+    max-width: 400px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 0;
+    padding: 0 20px 30px 20px;
+  }
+
+  .footer-col {
+    margin-bottom: 25px;
+  }
+
+  .cta-section .cta-infos {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .cta-section .cta-info-box {
+    min-width: 180px;
+    max-width: 100%;
+    margin: 0 auto 18px auto;
+  }
+
+  .three-minutes-cards-custom {
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+  }
+
+  .three-minutes-card-custom {
+    width: 95vw;
+    max-width: 400px;
+    height: 220px;
+  }
+
+  .stands {
+    padding: 40px 0 30px 0;
+  }
+
+  .stand-grid {
+    gap: 18px;
+  }
+
+  .stand-card {
+    width: 95vw;
+    max-width: 340px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .three-minutes-cards {
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+  }
+
+  .three-minutes-card {
+    width: 95vw;
+    max-width: 420px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .tickets-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .ticket-card-new {
+    width: 95vw;
+    max-width: 350px;
+  }
+}
