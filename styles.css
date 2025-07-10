@@ -1229,7 +1229,7 @@ nav .navigation li a:hover {
 .lang-dropdown {
   display: none;
   position: absolute;
-  right: 0;
+  left: 0;
   top: 110%;
   background: #fff;
   border: 1px solid #eee;
