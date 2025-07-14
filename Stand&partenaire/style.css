@@ -1,0 +1,341 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+  border: none;
+}
+
+:root {
+  --accent: #ff52a2;
+  --accent2: #ff719a;
+  --text: #060606;
+}
+
+body {
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+section {
+  padding: 50px 100px;
+}
+
+nav {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  z-index: 1000;
+  padding: 60px 20px;
+}
+
+nav.active {
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav .logo img {
+  width: 100px;
+}
+
+nav .navigation {
+  display: flex;
+}
+
+nav .navigation li {
+  position: relative;
+}
+
+nav .navigation li a {
+  font-size: 0.9rem;
+  color: var(--text);
+  font-weight: 600;
+  padding: 10px 20px;
+}
+
+nav .navigation li a:hover {
+  color: var(--accent);
+}
+
+.btn0 {
+  background-color: var(--accent);
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 15px;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.btn0 a {
+  color: rgb(255, 255, 255);
+}
+
+#rancard-menu {
+  color: var(--text);
+  font-size: 1.6rem;
+  cursor: pointer;
+  z-index: 10001;
+  display: none;
+}
+
+.footer {
+  background: #fff;
+  color: #060606;
+  padding: 60px 0 0 0;
+  font-size: 1rem;
+  border-top: 1px solid #e5e5e5;
+  margin-top: 40px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px 20px 20px;
+  gap: 40px;
+}
+
+.footer-col {
+  flex: 1 1 220px;
+  min-width: 200px;
+  margin-bottom: 30px;
+}
+
+.logo-col {
+  max-width: 320px;
+}
+
+.footer-logo {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.footer-desc {
+  font-size: 1.08rem;
+  color: #222;
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 18px;
+  margin-top: 10px;
+}
+
+.footer-socials a {
+  color: #060606;
+  font-size: 2rem;
+  transition: color 0.2s;
+}
+
+.footer-socials a:hover {
+  color: #ff52a2;
+}
+
+.footer-col h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+  color: #060606;
+}
+
+.footer-col ul {
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 14px;
+  color: #222;
+  font-size: 1.05rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-col ul li a:hover {
+  color: #ff52a2;
+}
+
+.footer-col ul li a {
+  color: #060606;
+  transition: color 0.2s;
+  font-weight: 500;
+}
+
+.footer-col ul li a:hover {
+  color: #ff52a2;
+}
+
+.footer-col ul li i {
+  font-size: 1rem;
+  margin-right: 7px;
+  font-weight: 500;
+}
+
+.footer-separator {
+  border: none;
+  border-top: 1px solid black;
+  margin: 0 20px 0 20px;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 30px 0 30px 0;
+  color: #222;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+main {
+  margin: 5rem;
+  justify-content: flex-start;
+}
+
+form {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 10px 5px 5px rgba(3, 3, 3, 0.5);
+  padding: 1.5rem;
+  width: 30rem;
+  border: 1px solid;
+  margin: 2rem;
+}
+
+#insccription-form {
+  margin: 2rem;
+  padding: 0.5rem;
+}
+
+form #inscription-form input {
+  width: 25rem;
+  height: 2rem;
+  background-color: #f5f0f3;
+  border: 1px solid;
+  border-color: rgb(10, 2, 2, 0.8);
+  padding: 0.5rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+}
+
+
+.inscription-btn button {
+  padding: 0.5rem;
+  background-color: #ff52a2;
+  color: #f5f0f3;
+  font: 18px Poppins, sans-serif;
+  border-radius: 8px;
+  width: 25rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.inscription #inscription-form legend {
+  color: brown;
+  font: bold;
+  font-size: 1.5rem;
+}
+
+.inscription #inscription-form p {
+  margin-bottom: 1rem;
+  color: rgb(12, 14, 15, 0.5);
+}
+
+.inscription-btn p {
+  margin-bottom: 1.5rem;
+  color: #ff52a2;
+}
+
+.inscription-btn p a {
+  color: #ff52a2;
+}
+
+.inscription form {
+  margin: 1rem;
+}
+
+form #inscription-form input-placeholder {
+  background-color: #ff52a2;
+}
+
+ .main-button {
+    display: grid;
+    grid-template-columns: 10rem 10rem;
+    padding: 0.5rem;
+    margin: 1rem;
+    width: 20rem;
+    margin-top: 3rem;
+    border-radius: 0.5rem;
+    place-items: center;
+    background-color:#b4b3b383;
+}
+
+#btn-main1, #btn-main2 {
+    background: none;
+    color: #4B5563;
+    padding: 0.5rem;
+}
+
+ .main-button a {
+    color: black;
+    font: 18px Poppins, sans-serif;
+}
+
+#btn-main1 {
+    border-right: 2px solid;
+    border-color: #e5e5e5;
+    border-radius: 5px 5px 5px 5px;
+}
+
+#btn-main2 {
+     border-radius: 0px 5px 5px 0px;
+}
+
+main .main-button #btn-main1 {
+    cursor: pointer;
+    background-color: #b4b3b383;;
+    color: white;
+    transition: all 0.3 ease;
+}
+
+main .main-button #btn-main1:hover {
+    background-color: white;
+    color: #b4b3b383;;
+}
+
+main .main-button #btn-main2 {
+    background: none;
+    cursor: pointer;
+    background-color:#b4b3b383;
+    color: white;
+    transition: all 0.3 ease;
+}
+
+main .main-button #btn-main2:hover {
+    background-color: white;
+    color: #b4b3b383;
+}
+
+body {
+      position: relative;
+    }
+
+  .inscription {
+     display: grid;
+     place-items: center;
+    }
