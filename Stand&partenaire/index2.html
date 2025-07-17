@@ -1,115 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"/>
-    <link rel="icon" type="image/png" href="./images/logos/citedurancard1.png"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="stylesheet" href="./style.css" />
-    <title>Connexion</title>
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
+  <link rel="icon" type="image/png" href="./images/logos/citedurancard1.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="./style.css" />
+  <title>Connexion</title>
+
 </head>
+
 <body>
-    <header>
-      <nav>
-        <a href="#" class="logo"
-          ><img src="./images/citedurancard2.jpg" alt
-        /></a>
-        <ul class="navigation">
+  <header>
+    <nav>
+      <a href="#" class="logo"><img src="./images/citedurancard2.jpg" alt /></a>
+      <ul class="navigation">
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#tickets">Tickets</a></li>
+        <li><a href="#stands">Stands</a></li>
+        <li><a href="#partenaires">Partenaires</a></li>
+        <li><a href="#3min_pour_prouver">3min pour prouver</a></li>
+      </ul>
+      <div class="btn0"><a href="inscription">Mon Compte</a></div>
+      <div class="bx bx-menu" id="rancard-menu"></div>
+    </nav>
+  </header>
+
+  <main>
+
+
+    <div class="inscription">
+      <div class="main-button">
+        <button id="btn-main1" type="button"><a href="#">Connexion</a></button>
+        <button id="btn-main2" type="button"><a href="./index3.html">Inscription</a></button>
+      </div>
+
+      <form>
+        <div id="inscription-form">
+          <legend>Connectez-Vous</legend>
+          <p>Entrez vos identifiants pour accéder à votre compte.</p>
+
+          <label for="mail"><i class="fa-regular fa-envelope"></i>Email</label><br>
+          <input type="mail" id="mail" placeholder="votre@email.com" required><br>
+
+          <label for="password">Mot de passe</label><br>
+          <input type="password" id="password" placeholder="......." required><br>
+        </div>
+
+        <div class="inscription-btn">
+          <button>Se connecter</button>
+          <p>Pas encore de compte ? <a href="./index3.html">Inscrivez-vous</a></p>
+          <i class="fa-regular fa-envelope"></i>
+        </div>
+
+      </form>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col logo-col">
+        <img src="./images/citedurancard2.jpg" alt="La Cité du Rancard Logo" class="h-20 md:h-24 w-auto"
+          alt="Logo La Cité du Rancard" class="footer-logo" style="width: 100px;" />
+        <p class="footer-desc">
+          L'événement festif et de réseautage à Cotonou pour faire de nouvelles
+          rencontres amicales et professionnelles.
+        </p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="bx bxl-twitter"></i></a>
+        </div>
+      </div>
+      <div class="footer-col links-col">
+        <h3>Liens rapides</h3>
+        <ul>
           <li><a href="#accueil">Accueil</a></li>
           <li><a href="#tickets">Tickets</a></li>
           <li><a href="#stands">Stands</a></li>
           <li><a href="#partenaires">Partenaires</a></li>
           <li><a href="#3min_pour_prouver">3min pour prouver</a></li>
         </ul>
-        <div class="btn0"><a href="inscription">Mon Compte</a></div>
-        <div class="bx bx-menu" id="rancard-menu"></div>
-      </nav>
-    </header>
-
-    <main>
-            
-    
-        <div class="inscription">
-          <div class="main-button">
-                <button id="btn-main1" type="button"><a href="#">Connexion</a></button>
-                <button id="btn-main2" type="button"><a href="./index3.html">Inscription</a></button>
-            </div>
-          
-            <form>
-                <div id="inscription-form">
-                        <legend>Connectez-Vous</legend>
-                        <p>Entrez vos identifiants pour accéder à votre compte.</p>
-                        
-                        <label for="mail"><i class="fa-regular fa-envelope"></i>Email</label><br>
-                        <input type="mail" id="mail"  placeholder="votre@email.com" required><br>
-                        
-                        <label for="password">Mot de passe</label><br>
-                        <input type="password" id="password"  placeholder="......." required><br>
-                </div>
-
-                <div class="inscription-btn">
-                    <button>Se connecter</button>
-                    <p>Pas encore de compte ? <a href="./index3.html">Inscrivez-vous</a></p>
-                    <i class="fa-regular fa-envelope"></i>
-                </div>
-
-            </form>
-        </div>
-  </main>
-
-    <footer class="footer">
-      <div class="footer-container">
-        <div class="footer-col logo-col">
-          <img
-            src="./images/citedurancard2.jpg" alt="La Cité du Rancard Logo" class="h-20 md:h-24 w-auto"
-            alt="Logo La Cité du Rancard"
-            class="footer-logo"
-            style="width: 100px;"
-          />
-          <p class="footer-desc">
-            L'événement festif et de réseautage à Cotonou pour faire de nouvelles
-            rencontres amicales et professionnelles.
-          </p>
-          <div class="footer-socials">
-            <a href="#" aria-label="Facebook"><i class="bx bxl-facebook"></i></a>
-            <a href="#" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
-            <a href="#" aria-label="Twitter"><i class="bx bxl-twitter"></i></a>
-          </div>
-        </div>
-        <div class="footer-col links-col">
-          <h3>Liens rapides</h3>
-          <ul>
-            <li><a href="#accueil">Accueil</a></li>
-            <li><a href="#tickets">Tickets</a></li>
-            <li><a href="#stands">Stands</a></li>
-            <li><a href="#partenaires">Partenaires</a></li>
-            <li><a href="#3min_pour_prouver">3min pour prouver</a></li>
-          </ul>
-        </div>
-        <div class="footer-col info-col">
-          <h3>Informations</h3>
-          <ul>
-            <li><a href="#">À propos</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Politique de confidentialité</a></li>
-            <li><a href="#">Conditions d'utilisation</a></li>
-            <li><a href="#">Nous contacter</a></li>
-          </ul>
-        </div>
-        <div class="footer-col contact-col">
-          <h3>Contact</h3>
-          <ul>
-            <li><i class="bx bx-envelope"></i> <a href="#">contact@citedurancard.com</a></li>
-            <li><i class="bx bx-phone"></i> <a href="#">+229 01 61 82 06 46</a></li>
-          </ul>
-        </div>
       </div>
-      <hr class="footer-separator" />
-      <div class="footer-bottom">
-        <p>© 2025 La Cité du Rancard. Tous droits réservés.</p>
+      <div class="footer-col info-col">
+        <h3>Informations</h3>
+        <ul>
+          <li><a href="#">À propos</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Politique de confidentialité</a></li>
+          <li><a href="#">Conditions d'utilisation</a></li>
+          <li><a href="#">Nous contacter</a></li>
+        </ul>
       </div>
-    </footer>
+      <div class="footer-col contact-col">
+        <h3>Contact</h3>
+        <ul>
+          <li><i class="bx bx-envelope"></i> <a href="#">contact@citedurancard.com</a></li>
+          <li><i class="bx bx-phone"></i> <a href="#">+229 01 61 82 06 46</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr class="footer-separator" />
+    <div class="footer-bottom">
+      <p>© 2025 La Cité du Rancard. Tous droits réservés.</p>
+    </div>
+  </footer>
 </body>
+
 </html>

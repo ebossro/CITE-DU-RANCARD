@@ -86,7 +86,78 @@ nav .navigation li a:hover {
   font-size: 1.6rem;
   cursor: pointer;
   z-index: 10001;
-  display: none;
+  display: none;
+}
+
+.language-selector {
+  position: relative;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.lang-btn {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 6px 16px 6px 10px;
+  font-weight: 600;
+  color: var(--text);
+  cursor: pointer;
+  font-size: 1rem;
+  gap: 8px;
+}
+
+.lang-btn:hover {
+  background: #ffe0f0;
+  padding: 10px 12px 10px 12px;
+  border-radius: 8px;
+}
+
+.lang-label {
+  font-weight: 600;
+}
+
+.language-selector > button {
+  margin-right: 20px;
+}
+
+.lang-btn .bx {
+  font-size: 1.1em;
+  margin-left: 4px;
+}
+
+.lang-dropdown {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 110%;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  min-width: 140px;
+  z-index: 1002;
+  padding: 6px 0;
+}
+
+.language-selector.open .lang-dropdown {
+  display: block;
+}
+
+.lang-dropdown li {
+  padding: 8px 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: var(--text);
+}
+
+.lang-dropdown li:hover {
+  background: #8b0033;
+  margin: 0 5px 0 5px;
+  border-radius: 5px;
 }
 
 .footer {

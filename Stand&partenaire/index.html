@@ -1,141 +1,152 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="./images/citedurancard1.png" />
+  <link rel="stylesheet" href="./styles.css" />
+  <title>La Cité du Rancard - Évènement de Réseautage à Cotonou</title>
+</head>
 
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"/>
-    <link rel="icon" type="image/png" href="./images/logos/citedurancard1.png"/>
-    <link rel="stylesheet" href="./styles.css" />
+<body>
+  <header>
+    <nav>
+      <a href="#" class="logo"><img src="./images/citedurancard2.jpg" alt /></a>
+      <ul class="navigation">
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="./tickets/">Tickets</a></li>
+        <li><a href="#stands">Stands</a></li>
+        <li><a href="#partenaires">Partenaires</a></li>
+        <li><a href="#3min_pour_prouver">3min pour prouver</a></li>
+        <li><a href="#a_propos">A propos</a></li>
+      </ul>
+      <div class="language-selector">
+        <button class="lang-btn">
+          <i class='bx bx-globe'></i>
+          <span class="lang-label">FR</span>
+          <i class="bx bx-chevron-down"></i>
+        </button>
+        <ul class="lang-dropdown">
+          <li data-lang="fr">Français</li>
+          <li data-lang="en">English</li>
+        </ul>
+        <div class="btn0"><a href="inscription">Mon Compte</a></div>
+        <div class="bx bx-menu" id="rancard-menu"></div>
+      </div>
+      <!-- <div class="btn0"><a href="inscription">Mon Compte</a></div>
+      <div class="bx bx-menu" id="rancard-menu"></div> -->
+    </nav>
+  </header>
 
-    <title>La Cité du Rancard - Évènement de Réseautage à Cotonou</title>
+  <main>
+    <div class="main">
+      <h1>Stands et Partenaires</h1>
+      <p>Découvrez les stands et partenaires qui font de la cité du rancard un évènement exceptionnel.<br>
+        Réservez votre propre stand ou devenez partenaire.</p>
 
-  </head>
-  <body>
-    <header>
-      <nav>
-        <a href="#" class="logo"
-          ><img src="./images/citedurancard2.jpg" alt
-        /></a>
-        <ul class="navigation">
+      <div class="main-button">
+        <button id="btn-main1" type="button"><a href="#">Stands</a></button>
+        <button id="btn-main2" type="button"><a href="./index1.html">Partenaires</a></button>
+      </div>
+
+      <div class="button">
+        <button id="button1" href="#tous">Tous</button>
+        <button id="button2" href="#Intérieur">Intérieur</button>
+        <button id="button3" href="#Extérieur">Extérieur</button>
+      </div>
+    </div>
+
+    <div class="images">
+      <div id="image1">
+        <div id="image-container">
+          <img src="https://res.cloudinary.com/dbmyfbbe7/image/upload/v1747956757/stands/ebxqulp84jztckl9dwvo.jpg"
+            alt="Stand de Neo" width="350px">
+          <button>Disponible</button>
+        </div>
+        <p>Stand intérieur</p>
+        <h3>Neo</h3>
+        <h4><br>Par</h4>
+        <button class="button-connect"><a href="./index3.html">Se connecter pour réserver</a></button>
+        <i></i>
+      </div>
+
+      <div id="image2">
+        <div class="image-container">
+          <img src="https://res.cloudinary.com/dbmyfbbe7/image/upload/v1747956136/stands/kxvlsphepqf9boygrpkn.jpg"
+            alt="stand1" width="350px">
+        </div>
+        <p>Stand Extérieur</p>
+        <h3>Alxi</h3>
+        <h4><br>Par</h4>
+        <button class="button-connect"><a href="./index3.html">Stand déjà réservé</a></button>
+        <i></i>
+      </div>
+
+      <div id="image3">
+        <img src="https://res.cloudinary.com/dbmyfbbe7/image/upload/v1747857829/stands/drbkfoqdorepjtgxhvzh.png"
+          alt="Stand de Leidon" width="350px" height="233.33px">
+        <p>Stand Intérieur</p>
+        <h3>Leidon</h3>
+        <h4><br>Par</h4>
+        <button class="button-connect"><a href="./index3.html">Se connecter pour réserver</a></button>
+        <i></i>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col logo-col">
+        <img src="./images/citedurancard2.jpg" alt="La Cité du Rancard Logo" class="h-20 md:h-24 w-auto"
+          alt="Logo La Cité du Rancard" class="footer-logo" style="width: 100px;" />
+        <p class="footer-desc">
+          L'événement festif et de réseautage à Cotonou pour faire de nouvelles
+          rencontres amicales et professionnelles.
+        </p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="bx bxl-twitter"></i></a>
+        </div>
+      </div>
+      <div class="footer-col links-col">
+        <h3>Liens rapides</h3>
+        <ul>
           <li><a href="#accueil">Accueil</a></li>
           <li><a href="#tickets">Tickets</a></li>
           <li><a href="#stands">Stands</a></li>
           <li><a href="#partenaires">Partenaires</a></li>
           <li><a href="#3min_pour_prouver">3min pour prouver</a></li>
         </ul>
-        <div class="btn0"><a href="inscription">Mon Compte</a></div>
-        <div class="bx bx-menu" id="rancard-menu"></div>
-      </nav>
-    </header>
-
-    <main>
-        <div class="main">
-            <h1>Stands et Partenaires</h1>
-            <p>Découvrez les stands et partenaires qui font de la cité du rancard un évènement exceptionnel.<br>
-            Réservez votre propre stand ou devenez partenaire.</p>
-            
-            <div class="main-button">
-                <button id="btn-main1" type="button"><a href="#">Stands</a></button>
-                <button id="btn-main2" type="button"><a href="./index1.html">Partenaires</a></button>
-            </div>
-
-        <div class="button">
-            <button id="button1" href="#tous">Tous</button>
-            <button id="button2"  href="#Intérieur">Intérieur</button>
-            <button id="button3" href="#Extérieur">Extérieur</button>
-        </div>
-        </div> 
-
-        <div class="images">
-            <div id="image1">
-                <div id="image-container">
-                    <img src="https://res.cloudinary.com/dbmyfbbe7/image/upload/v1747956757/stands/ebxqulp84jztckl9dwvo.jpg" alt="Stand de Neo" width="350px">
-                    <button>Disponible</button>
-                </div>
-                <p>Stand intérieur</p>
-                <h3>Neo</h3>
-                <h4><br>Par</h4>
-                <button class="button-connect"><a href="./index3.html">Se connecter pour réserver</a></button>
-                <i></i>
-            </div>
-
-            <div id="image2">
-                <div class="image-container">
-                <img src="https://res.cloudinary.com/dbmyfbbe7/image/upload/v1747956136/stands/kxvlsphepqf9boygrpkn.jpg" alt="stand1" width="350px">
-                </div>
-                <p>Stand Extérieur</p>
-                <h3>Alxi</h3>
-                <h4><br>Par</h4>
-                <button class="button-connect"><a href="./index3.html">Stand déjà réservé</a></button>
-                <i></i>
-            </div>
-
-            <div id="image3">
-                <img src="https://res.cloudinary.com/dbmyfbbe7/image/upload/v1747857829/stands/drbkfoqdorepjtgxhvzh.png" alt="Stand de Leidon" width="350px" height="233.33px">
-                <p>Stand Intérieur</p>
-                <h3>Leidon</h3>
-                <h4><br>Par</h4>
-                <button class="button-connect"><a href="./index3.html">Se connecter pour réserver</a></button>
-                <i></i>
-            </div>
-            
-        </div>
-    </main>
-
-    <footer class="footer">
-      <div class="footer-container">
-        <div class="footer-col logo-col">
-          <img
-            src="./images/citedurancard2.jpg" alt="La Cité du Rancard Logo" class="h-20 md:h-24 w-auto"
-            alt="Logo La Cité du Rancard"
-            class="footer-logo"
-            style="width: 100px;"
-          />
-          <p class="footer-desc">
-            L'événement festif et de réseautage à Cotonou pour faire de nouvelles
-            rencontres amicales et professionnelles.
-          </p>
-          <div class="footer-socials">
-            <a href="#" aria-label="Facebook"><i class="bx bxl-facebook"></i></a>
-            <a href="#" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
-            <a href="#" aria-label="Twitter"><i class="bx bxl-twitter"></i></a>
-          </div>
-        </div>
-        <div class="footer-col links-col">
-          <h3>Liens rapides</h3>
-          <ul>
-            <li><a href="#accueil">Accueil</a></li>
-            <li><a href="#tickets">Tickets</a></li>
-            <li><a href="#stands">Stands</a></li>
-            <li><a href="#partenaires">Partenaires</a></li>
-            <li><a href="#3min_pour_prouver">3min pour prouver</a></li>
-          </ul>
-        </div>
-        <div class="footer-col info-col">
-          <h3>Informations</h3>
-          <ul>
-            <li><a href="#">À propos</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Politique de confidentialité</a></li>
-            <li><a href="#">Conditions d'utilisation</a></li>
-            <li><a href="#">Nous contacter</a></li>
-          </ul>
-        </div>
-        <div class="footer-col contact-col">
-          <h3>Contact</h3>
-          <ul>
-            <li><i class="bx bx-envelope"></i> <a href="#">contact@citedurancard.com</a></li>
-            <li><i class="bx bx-phone"></i> <a href="#">+229 01 61 82 06 46</a></li>
-          </ul>
-        </div>
       </div>
-      <hr class="footer-separator" />
-      <div class="footer-bottom">
-        <p>© 2025 La Cité du Rancard. Tous droits réservés.</p>
+      <div class="footer-col info-col">
+        <h3>Informations</h3>
+        <ul>
+          <li><a href="#">À propos</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Politique de confidentialité</a></li>
+          <li><a href="#">Conditions d'utilisation</a></li>
+          <li><a href="#">Nous contacter</a></li>
+        </ul>
       </div>
-    </footer>
+      <div class="footer-col contact-col">
+        <h3>Contact</h3>
+        <ul>
+          <li><i class="bx bx-envelope"></i> <a href="#">contact@citedurancard.com</a></li>
+          <li><i class="bx bx-phone"></i> <a href="#">+229 01 61 82 06 46</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr class="footer-separator" />
+    <div class="footer-bottom">
+      <p>© 2025 La Cité du Rancard. Tous droits réservés.</p>
+    </div>
+  </footer>
 
-    <script src="script.js"></script>
+  <script src="./script.js"></script>
 </body>
+
 </html>
