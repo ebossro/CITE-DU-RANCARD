@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="  https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    "
+    <link
+      rel="icon"
+      type="image/png"
+      href="./images/logos/citedurancard1.png"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js"></script>
+    <title>La Cité du Rancard - Évènement de Réseautage à Cotonou</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#" class="logo"
+          ><img src="./citedurancard2.jpg" alt="citedurancard2.jpg"
+        /></a>
+        <ul class="navigation">
+          <li>
+            <a href="../index.html">Accueil</a>
+          </li>
+          <li><a href="#tickets">Tickets</a></li>
+          <li><a href="#stands">Stands</a></li>
+          <li><a href="#partenaires">Partenaires</a></li>
+          <li><a href="#3min_pour_prouver">3min pour prouver</a></li>
+          <li><a href="#à_propos">à propos</a></li>
+        </ul>
+        <div class="btn0"><a href="inscription">Mon Compte</a></div>
+        <div class="bx bx-menu" id="rancard-menu"></div>
+      </nav>
+    </header>
+
+    <div class="containner">
+      <div class="tickets-titles">
+        <h2>Réservez votre ticket</h2>
+        <p>
+          Choisissez le ticket qui vous convient et préparez-vous à vivre une
+          expérience unique à La Cité du Rancard.
+        </p>
+      </div>
+      <div class="container-sections">
+        <div class="sections">
+          <h3 class="sections-titles">🎯 Voulez-vous faire un Rencard ?</h3>
+          <p class="sections-description">
+            Participez à notre système unique de rencontres et trouvez votre
+            match idéal !
+          </p>
+          <button class="sections-button" onclick="commencer()">
+            Commencer la recherche
+          </button>
+        </div>
+      </div>
+      <div
+        class="container-sections items-sections"
+        id="itemsSection"
+        style="display: none"
+      >
+        <div class="sections">
+          <i class="fa-solid fa-circle-exclamation"></i>
+          <h3 class="sections-titles">Connexion requise</h3>
+          <p class="sections-description">
+            Vous devez être connecté pour accéder au système de rancards.
+          </p>
+          <button class="sections-buttons">
+            Se Connecter <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+      <div class="connexion">
+        <div class="connexion-items">
+          <p class="connexion-title">
+            <i class="fa-solid fa-circle-exclamation"></i
+            ><span>Connectez-vous pour une expérience complète</span>
+          </p>
+          <p>
+            Bien que l'achat soit possible sans compte, la connexion vous permet
+            de retrouver vos tickets et de profiter de toutes les
+            fonctionnalités.
+          </p>
+          <a class="connexion-button" href="#" target="_blank"
+            >Se connecter ou s'inscrire</a
+          >
+        </div>
+      </div>
+
+      <div class="select-options">
+        <div>
+          <h3 class="options-titles">Sélectionnez votre ticket</h3>
+        </div>
+
+        <div class="select-options-items" id="selectOptions">
+          <label for="ticketSolo" class="options-items">
+            <div class="items-titles">
+              <div class="radio-and-title">
+                <input
+                  type="radio"
+                  id="ticketSolo"
+                  name="ticket"
+                  value="solo"
+                  checked
+                />
+                <h5 class="items-title1">Solo</h5>
+              </div>
+              <h6 class="items-title2">2000 FCFA</h6>
+            </div>
+            <div class="options-list">
+              <ul class="list-text">
+                <li class="lis">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-check w-4 h-4 text-rose mr-2 shrink-0"
+                  >
+                    <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <span>Accès à l'événement</span>
+                </li>
+                <li class="list-text">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-check w-4 h-4 text-rose mr-2 shrink-0"
+                  >
+                    <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <span>Participation au système de Date</span>
+                </li>
+                <li class="list-text">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-check w-4 h-4 text-rose mr-2 shrink-0"
+                  >
+                    <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <span>Numéro unique d'appariement</span>
+                </li>
+                <li class="list-text">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-check w-4 h-4 text-rose mr-2 shrink-0"
+                  >
+                    <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <span>Accès aux stands partenaires</span>
+                </li>
+              </ul>
+            </div>
+          </label>
+        </div>
+
+        <div class="select-options-items">
+          <label for="ticketSoloConso" class="options-items selected">
+            <div class="items-titles">
+              <div class="radio-and-title">
+                <input
+                  type="radio"
+                  id="ticketSoloConso"
+                  name="ticket"
+                  value="soloConso"
+                />
+                <h5 class="items-title1">Solo avec conso</h5>
+              </div>
+              <h6 class="items-title2">3000 FCFA</h6>
+            </div>
+            <div class="options-list">
+              <ul class="list-text">
+                <li class="lis">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-check w-4 h-4 text-rose mr-2 shrink-0"
+                  >
+                    <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <span>Tout ce qui est inclus dans Solo</span>
+                </li>
+                <li class="list-text">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-check w-4 h-4 text-rose mr-2 shrink-0"
+                  >
+                    <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <span>Une boisson conso d'entrée</span>
+                </li>
+                <li class="list-text">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-check w-4 h-4 text-rose mr-2 shrink-0"
+                  >
+                    <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <span>Accès prioritaire aux stands</span>
+                </li>
+                <li class="list-text">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-check w-4 h-4 text-rose mr-2 shrink-0"
+                  >
+                    <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <span>Possibilité de rencontrer les artistes</span>
+                </li>
+              </ul>
+            </div>
+          </label>
+        </div>
+
+        <div class="select-options-items">
+          <label for="ticketVip" class="options-items">
+            <div class="items-titles">
+              <div class="radio-and-title">
+                <input type="radio" id="ticketVip" name="ticket" value="vip" />
+                <h5 class="items-title1">Vip</h5>
+              </div>
+              <h6 class="items-title2">10000 FCFA</h6>
+            </div>
+            <div class="options-list">
+              <ul class="list-text">
+                <li class="list">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-check w-4 h-4 text-rose mr-2 shrink-0"
+                  >
+                    <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <span>Tout ce qui est inclus dans Solo avec Conso</span>
+                </li>
+                <li class="list-text">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-check w-4 h-4 text-rose mr-2 shrink-0"
+                  >
+                    <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <span>Accès à la zone VIP</span>
+                </li>
+                <li class="list-text">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-check w-4 h-4 text-rose mr-2 shrink-0"
+                  >
+                    <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <span>Consommations illimitées</span>
+                </li>
+                <li class="list-text">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-check w-4 h-4 text-rose mr-2 shrink-0"
+                  >
+                    <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <span>Cadeau exclusif La Cité du Rancard</span>
+                </li>
+              </ul>
+            </div>
+          </label>
+        </div>
+
+        <div class="info">
+          <h2 class="info-title">Informations complémentaires</h2>
+          <div class="info-plus">
+            <div class="info-para">
+              <p>
+                Quels influenceurs ou artistes aimeriez-vous à
+                l'événement?(optionnel)
+              </p>
+            </div>
+            <div class="info-2">
+              <div class="info-2-p">
+                <h3>Préférence artiste</h3>
+                <p>
+                  Sélectionnez les artistes que vous aimeriez voir à l'événement
+                  (max 3)
+                </p>
+              </div>
+
+              <div class="info-groups">
+                <div class="info-group">
+                  <div class="group-img">
+                    <img
+                      src="https://res.cloudinary.com/dbmyfbbe7/image/upload/v1747782774/artist-photos/njvttkdtgm81nn4gybjz.jpg"
+                      alt="Brandyyyyyyy"
+                    />
+                    <button
+                      class="selection-overlay-button"
+                      data-artist-id="brandy-overlay"
+                    >
+                      Sélectionnez
+                    </button>
+                    <div class="group-titles">
+                      <h4 class="">Brandyyyyyyy</h4>
+                      <p class="">Glé</p>
+                      <button class="btn-selection">
+                        <i class="fa-solid fa-music"></i> Sélectionner
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="info-group">
+                  <div class="group-img">
+                    <img
+                      src="https://res.cloudinary.com/dbmyfbbe7/image/upload/v1747958417/artist-photos/bxmqwbdyakdabgvunzf2.jpg"
+                      alt="Ninho"
+                    />
+                    <button
+                      class="selection-overlay-button"
+                      data-artist-id="brandy-overlay"
+                    >
+                      Sélectionnez
+                    </button>
+                    <div class="group-titles">
+                      <h4 class="">Ninho</h4>
+                      <p class="">Hip-Hop</p>
+                      <button class="btn-selection">
+                        <i class="fa-solid fa-music"></i> Sélectionner
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="info-group">
+                  <div class="group-img">
+                    <img
+                      src="https://res.cloudinary.com/dbmyfbbe7/image/upload/v1747958457/artist-photos/uo09leqvtbcc1ra5jie0.jpg"
+                      alt="Tiakola"
+                    />
+                    <button
+                      class="selection-overlay-button"
+                      data-artist-id="brandy-overlay"
+                    >
+                      Sélectionnez
+                    </button>
+                    <div class="group-titles">
+                      <h4 class="">Tiakola</h4>
+                      <p class="">Hip-Hop</p>
+                      <button class="btn-selection">
+                        <i class="fa-solid fa-music"></i> Sélectionner
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="btn-lass">
+            <button class="btn-selections">
+              continiuer vers le payement
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 576 512"
+              >
+                <path
+                  d="M64 32C28.7 32 0 60.7 0 96l0 32 576 0 0-32c0-35.3-28.7-64-64-64L64 32zM576 224L0 224 0 416c0 35.3 28.7 64 64 64l448 0c35.3 0 64-28.7 64-64l0-192zM112 352l64 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-64 0c-8.8 0-16-7.2-16-16s7.2-16 16-16zm112 16c0-8.8 7.2-16 16-16l128 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-128 0c-8.8 0-16-7.2-16-16z"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="paiement">
+      <div class="paiement-header">
+        <div class="paiement-icon">
+          <i class="fas fas fa-lock"></i>
+        </div>
+        <h2 class="paiement-title">Paiement sécurisé</h2>
+      </div>
+
+      <div class="choix-ticket">
+        <h3 class="paiement-subtitle">Votre choix de ticket</h3>
+        <div class="paiement-ticket">
+          <p class="ticket-name">Solo avec conso</p>
+          <p class="ticket-price">3000 FCFA</p>
+        </div>
+        <hr />
+        <div class="paiement-total">
+          <p class="total-label">Total</p>
+          <p class="total-price">3000 FCFA</p>
+        </div>
+      </div>
+
+      <div class="paiement-description">
+        <h5>Informations de paiement</h5>
+        <p>
+          Vous allez être redirigé vers la plateforme de paiement sécurisée
+          Moneroo pour finaliser votre achat.
+        </p>
+        <p>Paiement sécurisé par Moneroo</p>
+        <p>
+          Choisissez votre mode de paiement préféré pour finaliser votre
+          réservation.
+        </p>
+      </div>
+
+      <div class="paiement-options">
+        <button class="paiement-button">procéder au payement</button>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-col logo-col">
+          <img
+            src="./citedurancard2.jpg"
+            alt="Logo La Cité du Rancard"
+            class="footer-logo"
+            style="width: 100px"
+          />
+          <p class="footer-desc">
+            L'événement festif et de réseautage à Cotonou pour faire de
+            nouvelles rencontres amicales et professionnelles.
+          </p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Facebook"
+              ><i class="bx bxl-facebook"></i
+            ></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+            <a href="#" aria-label="Twitter"><i class="bx bxl-twitter"></i></a>
+          </div>
+        </div>
+        <div class="footer-col links-col">
+          <h3>Liens rapides</h3>
+          <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#tickets">Tickets</a></li>
+            <li><a href="#stands">Stands</a></li>
+            <li><a href="#partenaires">Partenaires</a></li>
+            <li><a href="#3min_pour_prouver">3min pour prouver</a></li>
+          </ul>
+        </div>
+        <div class="footer-col info-col">
+          <h3>Informations</h3>
+          <ul>
+            <li><a href="#">À propos</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Politique de confidentialité</a></li>
+            <li><a href="#">Conditions d'utilisation</a></li>
+            <li><a href="#">Nous contacter</a></li>
+          </ul>
+        </div>
+        <div class="footer-col contact-col">
+          <h3>Contact</h3>
+          <ul>
+            <li>
+              <i class="bx bx-envelope"></i>
+              <a href="#">contact@citedurancard.com</a>
+            </li>
+            <li>
+              <i class="bx bx-phone"></i> <a href="#">+229 01 61 82 06 46</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr class="footer-separator" />
+      <div class="footer-bottom">
+        <p>© 2025 La Cité du Rancard. Tous droits réservés.</p>
+      </div>
+    </footer>
+  </body>
+  <
+</html>

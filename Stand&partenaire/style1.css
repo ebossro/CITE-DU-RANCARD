@@ -1,0 +1,868 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+  border: none;
+}
+
+:root {
+  --accent: #ff52a2;
+  --accent2: #ff719a;
+  --text: #060606;
+}
+
+body {
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+section {
+  padding: 50px 100px;
+}
+
+nav {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  z-index: 1000;
+  padding: 60px 20px;
+}
+
+nav.active {
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav .logo img {
+  width: 100px;
+}
+
+nav .navigation {
+  display: flex;
+}
+
+nav .navigation li {
+  position: relative;
+}
+
+nav .navigation li a {
+  font-size: 0.9rem;
+  color: var(--text);
+  font-weight: 600;
+  padding: 10px 20px;
+}
+
+nav .navigation li a:hover {
+  color: var(--accent);
+}
+
+.btn0 {
+  background-color: var(--accent);
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 15px;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.btn0 a {
+  color: rgb(255, 255, 255);
+}
+
+#rancard-menu {
+  color: var(--text);
+  font-size: 1.6rem;
+  cursor: pointer;
+  z-index: 10001;
+  display: none;
+}
+
+.footer {
+  background: #fff;
+  color: #060606;
+  padding: 60px 0 0 0;
+  font-size: 1rem;
+  border-top: 1px solid #e5e5e5;
+  margin-top: 40px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px 20px 20px;
+  gap: 40px;
+}
+
+.footer-col {
+  flex: 1 1 220px;
+  min-width: 200px;
+  margin-bottom: 30px;
+}
+
+.logo-col {
+  max-width: 320px;
+}
+
+.footer-logo {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.footer-desc {
+  font-size: 1.08rem;
+  color: #222;
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 18px;
+  margin-top: 10px;
+}
+
+.footer-socials a {
+  color: #060606;
+  font-size: 2rem;
+  transition: color 0.2s;
+}
+
+.footer-socials a:hover {
+  color: #ff52a2;
+}
+
+.footer-col h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+  color: #060606;
+}
+
+.footer-col ul {
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 14px;
+  color: #222;
+  font-size: 1.05rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-col ul li a:hover {
+  color: #ff52a2;
+}
+
+.footer-col ul li a {
+  color: #060606;
+  transition: color 0.2s;
+  font-weight: 500;
+}
+
+.footer-col ul li a:hover {
+  color: #ff52a2;
+}
+
+.footer-col ul li i {
+  font-size: 1rem;
+  margin-right: 7px;
+  font-weight: 500;
+}
+
+.footer-separator {
+  border: none;
+  border-top: 1px solid black;
+  margin: 0 20px 0 20px;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 30px 0 30px 0;
+  color: #222;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+main {
+    margin-top: 8rem;
+    position: relative;
+    
+}
+
+.entête {
+    display: grid;
+    grid-template-columns: 500px 600px;
+    grid-template-rows: 400px;
+    gap: 1rem;
+    margin: 1rem;
+    justify-content: center;
+    background-color: #fddee7;
+    padding: 1rem;
+}
+
+.entête2 {
+    background-image: url("https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 10px;   
+    position: relative; 
+    opacity: 0.8; 
+    background-color: rgba(228, 49, 109, 0.4);
+    background-blend-mode: overlay;
+}
+
+.image-text {
+    background-color: white;
+    margin: 1rem;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+
+.image-text h3 {
+    margin-bottom: 0.7rem;
+    color: brown;
+    font-size: 1.5rem;
+}
+
+.image-text p {
+    font-size: 1.2rem;
+}
+
+
+.entête1 h1 p {
+    color: brown;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 1rem;
+}
+
+.entête1 h1 p strong {
+    color: #ff52a2;
+    font-size: 2rem;
+}
+
+.entête1 p {
+    font-size: 1rem;
+    margin: 1.3rem;
+    color: #060606;
+}
+
+.entête1 p i {
+    color: #ff52a2;
+    margin: 10px;
+}
+
+.entête-button {
+    justify-content: center;
+}
+
+.entête-button button {
+    padding: 0.7rem;
+    margin: 10px;
+}
+
+.entête-button #entête-button1 {
+     background-color: #ff52a2;
+    border-radius: 8px;
+}
+
+.entête-button #entête-button1 a {
+  color: white;
+  font-size: 1rem;
+}
+
+.entête-button #entête-button2 a {
+    color: #ff52a2;
+     font-size: 1rem;
+}
+
+.entête-button #entête-button2:hover {
+    background-color:  #ff52a2;
+    color: white;
+    transition: all 0.5 ease;
+    cursor: pointer;
+    border: 2px solid;
+}
+
+.entête-button #entête-button2 a:hover {
+    color: white;
+}
+
+ .entête-button #entête-button2 {
+    color: #ff52a2;
+    background-color: white;
+    border-radius: 8px;
+    border: 2px solid;
+}
+
+.entête1 {
+  margin-left: 2rem;
+}
+
+.discover {
+  margin-top: 5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.discover-main h1 {
+  color: brown;
+  font-size: 2rem;
+  font: 3rem Poppins, sans-serif;
+  letter-spacing: 3px;
+  font-size: bold;
+}
+
+.discover-main p {
+  font: 1.5rem Poppins, sans-serif;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+  color: rgba(11, 9, 9, 0.5);
+}
+
+.discover-div {
+  display: grid;
+  grid-template-columns: 350px 350px 350px;
+  grid-template-rows: 200px;
+  place-items: center;
+  place-content: center;
+  margin: 1.5rem;
+  gap: 1rem;
+
+}
+
+.discover-class1, .discover-class2, .discover-class3 {
+  background-color: rgba(245, 241, 241, 0.4);
+  padding: 0.8rem;
+  border: 1px solid;
+  border-color: rgba(247, 195, 195, 0.4);
+  border-radius: 10px;
+  background-size: cover;
+  cursor: pointer;
+  transition: all 1 ease;
+}
+
+.discover-div .discover-class1:hover {
+  background-color: rgba(245, 241, 241, 0.4);
+  box-shadow: 10px 5px 5px rgba(31, 26, 26, 0.5);
+}
+
+.discover-div .discover-class2:hover {
+  background-color:  rgba(245, 241, 241, 0.4);
+  box-shadow: 10px 5px 5px rgba(28, 26, 26, 0.5);
+}
+
+.discover-div .discover-class3:hover {
+  background-color:  rgba(245, 241, 241, 0.4);
+  box-shadow: 10px 5px 5px rgba(30, 27, 27, 0.5);
+}
+
+.discover-class1 {
+  width: 350px;
+  height: 200px;
+  padding: 0.5rem;
+}
+
+.discover-class2 {
+  width: 350px;
+  height: 200px;
+  padding: 0.5rem;
+}
+
+.discover-class3 {
+  width: 350px;
+  height: 200px;
+  padding: 0.5rem;
+}
+
+.discover-div i {
+  color: #ff52a2;
+  margin-bottom: 8px;
+  font-size: 2rem;
+}
+
+.discover-div h2 {
+  color: brown;
+  font-size: 1.2rem;
+  margin: 0.5rem;
+}
+
+.discover-div p {
+  font-size: 1.1rem;
+  margin: 0.5rem;
+}
+
+.program-main {
+  background-color: #f7dae3;
+  display: grid;
+  grid-template-columns: 450px 600px;
+  grid-template-rows: 350px;
+  padding: 1.5rem;
+  margin: 3rem;
+  gap: 1rem;
+  border-radius: 1rem;
+  height: 400px;
+}
+.program-image {
+  background-image: url(images/plage.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  place-items: center;
+  border-radius: 1rem;
+}
+
+.program-text h1 {
+  color: brown;
+  margin: 1rem;
+}
+
+.program-text p {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.program-text ul li {
+  margin: 1rem;
+}
+
+.program-text ul li i {
+  margin-left: 0.5rem;
+  color: #ff52a2;
+  padding: 0.5rem;
+}
+
+.reservation-main {
+  background-color: #f7dae3;
+  margin-top: 4rem;
+  display: flex;
+  padding: 2rem;
+}
+
+.reservation-text {
+  margin-right: 7rem;
+}
+
+.reservation-text h1 {
+  color: brown;
+  margin-bottom: 1rem;
+}
+
+.reservation-text ul h2 {
+ margin-top: 1rem;
+}
+
+.reservation-main .reservation-text ul li h2 {
+  color: brown;
+}
+
+.reservation-main .reservation-text ul li p {
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+}
+
+.reservation-text ul h2 strong {
+  background-color: #ff52a2;
+  padding: 0.5rem;
+  font: 1.2rem Poppins, sans-serif;
+  border-radius: 75%;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+
+.reservation-button {
+    justify-content: center;
+}
+
+.reservation-button button {
+    padding: 0.7rem;
+    margin: 10px;
+}
+
+.reservation-button #reservation-btn1 {
+     background-color: #ff52a2;
+    border-radius: 8px;
+}
+
+.reservation-button #reservation-btn1 a {
+  color: white;
+  font-size: 1rem;
+}
+
+.reservation-button #reservation-btn2 a {
+    color: #ff52a2;
+     font-size: 1rem;
+}
+
+.reservation-button #reservation-btn2:hover {
+    background-color:  #ff52a2;
+    color: white;
+    transition: all 0.5 ease;
+    cursor: pointer;
+    border: 2px solid;
+}
+
+.reservation-button #reservation-btn2 a:hover {
+    color: white;
+}
+
+.reservation-button #reservation-btn2 {
+    color: #ff52a2;
+    background-color: white;
+    border-radius: 8px;
+    border: 2px solid;
+}
+
+.reservation-class {
+  border: 1px solid;
+  border-radius: 2rem;
+  box-shadow: 10px 10px 5px rgba(15, 13, 13, 0.4);
+  justify-items: center;
+  justify-content: center;
+  width: 400px;
+  background-color: white;
+  padding: 2rem;
+}
+
+.reservation-class h1 {
+  color: brown;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.reservation-class #reservation-class1 {
+  background-color: #ff52a358;
+  width: 320px;
+  height: 150px;
+  border-radius: 1rem;
+  padding: 1rem;
+  justify-content: center;
+  
+}
+
+.reservation-class #reservation-class1 h1 {
+  color: white;
+  font-size: 5rem;
+  justify-content: center;
+  text-align: center;
+}
+
+.reservation-class #reservation-class2 p {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+#reservation1 {
+    color: rgba(17, 11, 11, 0.4);
+    font-size: 1rem;
+}
+
+#reservation-ticket {
+  background-color: brown;
+  color: white;
+  padding: 0.5rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  width: 320px;
+  height: 45px;
+  text-align: center;
+}
+
+#reservation-ticket a {
+  color: white;
+}
+
+.ticket-main {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.ticket-main h1 {
+  color: brown;
+  margin-bottom: 1.5rem;
+}
+
+.type-ticket {
+  display: flex;
+  padding: auto;
+  margin: 2rem;
+  place-content: center;
+}
+
+.type-ticket ul li {
+  text-align: left;
+  padding: 0.5rem;
+}
+
+.type-ticket ul {
+  margin-top: 1.5rem;
+}
+
+.type-ticket ul li i {
+  color: #ff52a2;
+  font-size: 1rem;
+  background: none;
+}
+
+#type-ticket1 i , h2, p {
+  text-align: left;
+}
+
+.type-ticket h2 {
+  color: brown;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.type-ticket i {
+  font-size: 2rem;
+  background-color: rgba(245, 241, 241, 0.877);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  color: #ff52a2;
+  justify-items: left;
+}
+
+.type-ticket p {
+  font-size: 2rem;
+}
+
+#type-ticket1 {
+  background-color: #f5f1f3;
+  padding: 1rem;
+  margin: 2rem;
+  height: 30rem;
+  width: 20rem;
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 10px 5px 5px rgba(12, 10, 10, 0.4);
+
+}
+
+#type-ticket2 {
+  background-color: #f6cae0;
+  padding: 1rem;
+  margin: 2rem;
+  width: 20rem;
+  height: 30rem;
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 10px 5px 5px rgba(12, 10, 10, 0.4);
+  
+}
+
+#type-ticket3 {
+  background-color:#f5f1f3;
+  padding: 1rem;
+  margin: 2rem;
+  width: 20rem;
+  height: 30rem;
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 10px 5px 5px rgba(12, 10, 10, 0.4);
+ 
+}
+
+#typeticket-btn1 {
+  background-color: brown;
+  color: white;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border-radius: 1rem;
+  width: 18rem;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+#typeticket-btn2 {
+  background-color: #ff52a2;
+  color: white;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border-radius: 1rem;
+  width: 18rem;
+  margin-bottom: 1rem;
+  align-items: center;
+  border: 1px solid;
+  border-color: #ff52a2;
+}
+
+#typeticket-btn3 {
+  background-color: brown;
+  color: white;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border-radius: 1rem;
+  width: 18rem;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+.type-ticket button a {
+  color: white;
+  font-size: 1.1rem;
+}
+
+.stand-place {
+  margin-top: 3rem;
+  background-color: #fdf6f9;
+  
+}
+
+.stand-place h1 {
+  color: brown;
+  text-align: center;
+  margin-bottom: 1rem;
+
+}
+
+.stand-place p {
+  text-align: center;
+    justify-content: center;
+}
+
+.stand-btn {
+    display: grid;
+    grid-template-columns: 10rem 10rem 10rem;
+    grid-template-rows: 2rem;
+    padding: 0.5rem;
+    gap: 5px;
+    font: 18px Poppins, sans-serif;
+    place-content: center;
+    margin-top: 2rem;
+}
+
+
+#button1 {
+    background-color:  #ff52a2;
+    border: 1px solid;
+    color: white;
+    border-radius: 5px;
+}
+
+#button2 {
+    background-color:  #ff52a2;
+    color: white;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+#button3 {
+    background-color:  #ff52a2;
+    border: 1px solid;
+    color: white;
+     border-radius: 5px;
+}
+
+.stand-btn a {
+    color: #ff52a2;
+}
+
+ #image2 {
+        background-color: white;
+        margin: 1rem;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px 20px 20px 20px;
+        box-shadow: 5px 5px 10px 3px rgba(8, 6, 6, 0.2);
+        }
+
+
+.stand-img {
+    display: grid;
+    grid-template-columns: 382px 382px 382px;
+    grid-template-rows: 450px;
+    gap: 20px;
+    margin: 2rem;
+}
+
+.stand-img img {
+    border-radius: 20px 20px 0px 0px;
+}
+
+.stand-img p {
+    margin-left: 1rem;
+    background-color: #8B00331A;
+    margin-top: 0.5rem;
+    color: #8B0033;
+    opacity: 0.8;
+    border-radius: 5px;
+    padding: 0.5rem;
+    width: 120px;
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+.stand-img h3 {
+    margin-left: 1rem;
+    color: #8B0033;
+    font-family: 12px Poppins, sans-serif;
+    margin-top: 1rem;
+}
+
+.stand-img h4 {
+    margin-left: 1rem;
+    font: 14px Poppins, sans-serif;
+    color: #4B5563;
+}
+
+.stand-img .button-connect {
+    margin: 1rem;
+    background-color: #ff52a2;
+    padding: 0.5rem;
+    margin-left: 1rem;
+    border-radius: 0.4rem;
+}
+
+.stand-img .button-connect a {
+    text-decoration: none;
+    color: white;
+}
+
+.stand-btn1 {
+  justify-content: center;
+  align-content: center;
+  place-content: center;
+}
+
+.stand-btn1 button {
+  background-color: brown;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  align-items: center;
+  border-radius: 1rem;
+  place-content: center;
+}
+
+.stand-btn1 button a {
+  color: white;
+}
+
+.stand-btn1 button i {
+  color: white;
+}
+
